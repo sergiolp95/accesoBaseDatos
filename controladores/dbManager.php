@@ -13,9 +13,9 @@ class gestorBD
 	private $dbname = "1438721_cms";*/
 	
 	private $host = "mysql.hostinger.es";
-	private $user = "u316672289_admin";
-	private $pass = "cagoenla";
-	private $dbname = "u316672289_acces";
+	private $user = "#";
+	private $pass = "#";
+	private $dbname = "#";
 	
 	private $dbh; // El objeto que representa nuestra BBDD
 	private $error; // Almacena el posible error que hayamos encontrado
