@@ -1,0 +1,279 @@
+#centrada{
+  margin: 50px auto 0px auto;
+  width:300px;
+  font-family: 'Verdana' !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.utopix{
+  padding-bottom:50px;
+}
+a{
+  color:#fff;
+  text-decoration:none;
+}
+
+.cube {
+  width: 100%;
+  height: 50px;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.estado-defecto,.estado-activo {
+  height: 50px;
+}
+.cube +.cube{
+margin:10px 0px;
+}
+.estado-defecto {
+  -webkit-transform: translateZ(25px);
+  -moz-transform: translateZ(25px);
+  -o-transform: translateZ(25px);
+  -ms-transform: translateZ(25px);
+  transform: translateZ(25px);
+}
+.flip-to-top .estado-activo {
+  -webkit-transform: rotateX(90deg) translateZ(75px);
+  -moz-transform: rotateX(90deg) translateZ(75px);
+  -o-transform: rotateX(90deg) translateZ(75px);
+  -ms-transform: rotateX(90deg) translateZ(75px);
+  transform: rotateX(90deg) translateZ(75px);
+}
+.flip-to-bottom .estado-activo {
+  -webkit-transform: rotateX(-90deg) translateZ(-50px);
+  -moz-transform: rotateX(-90deg) translateZ(-50px);
+  -o-transform: rotateX(-90deg) translateZ(-50px);
+  -ms-transform: rotateX(-90deg) translateZ(-50px);
+  transform: rotateX(-90deg) translateZ(-50px);
+}
+.cube.flip-to-top:hover {
+  -webkit-transform: rotateX(-89deg);
+  -moz-transform: rotateX(-89deg);
+  -o-transform: rotateX(-89deg);
+  -ms-transform: rotateX(-89deg);
+  transform: rotateX(-89deg);
+}
+.cube.flip-to-bottom:hover {
+  -webkit-transform: rotateX(89deg);
+  -moz-transform: rotateX(89deg);
+  -o-transform: rotateX(89deg);
+  -ms-transform: rotateX(89deg);
+  transform: rotateX(89deg);
+}
+.cube {
+  text-align: center;
+  margin: 0 auto;
+}
+.estado-defecto,
+.estado-activo {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 50px;
+  -webkit-transition: background 250ms ease;
+  -moz-transition: background 250ms ease;
+  -o-transition: background 250ms ease;
+  transition: background 250ms ease;
+}
+.cube:hover .estado-defecto {
+  background: #000;
+}
+.cursos {
+  background: #B22222;
+}
+.profesores {
+  background: #4169E1;
+}
+.alumnos {
+  background: #008080;
+}
+.asignaturas {
+  background: #CD853F;
+}
+/*---->Empieza fondo*/
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  background: #262530;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#dust {
+  position: absolute;
+  width: 99%;
+  top: 0;
+}
+/*#dust2 {
+  position: absolute;
+  width: 99%;
+  height: 600px;
+  top:  1057;
+}*/
+.title {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+h1 {
+  font-size: 2em;
+  margin-top: 50px;
+  opacity: 1;
+  position: relative;
+  color: #E3E3EB;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 10px;
+  display: inline-block;
+  border-bottom: 3px solid #E3E3EB;
+  letter-spacing: 10px;
+}
+h1 > div {
+  position: relative;
+  display: inline-block;
+}
+h1 > div + div {
+  display: block;
+}
+h1 span {
+  letter-spacing: normal;
+  display: block;
+  margin-bottom: 10px;
+  font-size: .5em;
+  font-style: italic;
+  position: relative;
+  z-index: 2;
+}
+h1 span:before,
+h1 span:after {
+  content: "";
+  width: 43%;
+  height: 3px;
+  border-radius: 5px;
+  background: #E3E3EB;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  top: .5em;
+}
+h1 span:after {
+  left: 0;
+}
+/*ANimation stuff*/
+.title {
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@-webkit-keyframes zoomIn {
+  0% {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes zoomIn {
+  0% {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*boton*/
+.main{
+  width: 100%;
+}
+
+.sub-main{
+  width: 30%;
+  float: left;
+}
+.button-three{
+  text-align: center;
+  cursor: pointer;
+  font-size:18px;
+  margin: 0 0 0 50px;
+  color:#fff;
+}
+.button-three {
+    position: absolute;
+    background-color: #FF4A4A;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.button-three:hover{
+   background:#fff;
+   box-shadow:0px 2px 10px 5px #97B1BF;
+   color:#000;
+}
+
+.button-three:after {
+    content: "";
+    background: #f1c40f;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button-three:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}

@@ -1,0 +1,146 @@
+body{
+      font-family: 'Verdana';
+      background: #262530;
+}
+#miTabla{
+     margin: 0 auto;
+     padding: 10px;
+     max-width: 800px;
+     
+}
+#dust {
+  position: absolute;
+  width: 99%;
+  top: 0;
+  z-index: -1;
+}
+
+table{
+    
+    border-collapse: collapse; /*Sirve para que no se repitan los bordes, es decir, agrupar los bordes*/
+    margin: 0 0 10px 0;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: table;
+    z-index: 1;
+}
+
+table,th,tr,td{
+    
+    border: 1px solid #D3D3D3;/* Anchura, tipo de borde, color del borde */
+}
+
+th,td{
+    
+    text-align: center;
+    vertical-align: central;/**/
+    height: 30px; /*Asignamos el alto de las columnas y filas*/
+}
+
+
+/*colores de las tablas*/
+.rojo{
+    
+  font-weight: 900;
+  color: #ffffff;
+  background: #B22222;
+}
+.gris{
+    
+  font-weight: 900;
+  color: #ffffff;
+  background: #008080;/*Al final es verde xD*/
+}
+.azul{
+    
+  font-weight: 900;
+  color: #ffffff;
+  background: #4169E1;
+}
+.naranja{
+    
+  font-weight: 900;
+  color: #ffffff;
+  background: #CD853F;
+}
+
+/*color negro de links de cursos, y opcion hover*/
+.negro, .negro:visited{
+    
+  color: #000000;
+
+}
+.negro:hover{
+    color: #000000;
+    font-size: 110% ;
+}
+
+
+/*seudoclase se denomina*/
+tr:nth-child(even)/*Esto lo que hace es a los hijos de la etiqueta, le aplica a los pares(even), impares(odd)*/{
+    
+    background-color: #f2f2f2;
+    
+}
+tr:nth-child(odd)/*Esto lo que hace es a los hijos de la etiqueta, le aplica a los pares(even), impares(odd)*/{
+    
+    background-color: #ffffff;
+    
+}
+/*Para los enlaces de borrado*/
+.borrar{
+  color: red;
+text-decoration: none;  
+}
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2em;
+  margin-top: 50px;
+  opacity: 1;
+  position: relative;
+  color: #E3E3EB;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 10px;
+  display: inline-block;
+  border-bottom: 3px solid #E3E3EB;
+  letter-spacing: 10px;
+}
+.icono{
+    width: 20px;
+}
+.iconoAdd{
+    width: 20px;
+    
+}
+
+.mano:hover, a:hover {
+    cursor: pointer;
+}
+
+/*detalles cursos*/
+
+.divDetalle{
+    width: 100%;
+    text-align: left;
+    height: auto;
+}
+.divCurso{
+    width: 57%;
+    float: right;
+    height: auto !important;
+    margin-top: 10px;
+}
+.divDetalle img{
+    width: 40%;
+    
+}
+/*.altoCol tr{
+    height: 30px
+}*/
+
+.tablaVacia{
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+}
